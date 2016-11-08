@@ -52,7 +52,7 @@ import { unMut } from './mut';
   When passing a property that is a complex object (e.g. object, array) instead of a primitive object (e.g. number, string),
   only the reference to the object is protected using the readonly helper.
   This means that you can change properties of the object both on the parent component, as well as the child component.
-  This read-only binding behaves similar to the const keyword in ES2015.
+  The `readonly` binding behaves similar to the `const` keyword in JavaScript.
   
   Let's look at an example:
   
