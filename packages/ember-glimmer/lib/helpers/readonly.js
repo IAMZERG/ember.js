@@ -60,7 +60,12 @@ import { unMut } from './mut';
   
   ```app/components/my-parent.js
   export default Ember.Component.extend({
-    clicks: { total: 3 }
+    clicks: null,
+    
+    init() {
+      this._super(...arguments);
+      this.set('clicks', { total: 3 });
+    }
   });
   ```
   
